@@ -1,0 +1,65 @@
+Для проверки работоспособности кода использовался сайт:
+https://www.onlinegdb.com/online_java_compiler
+
+
+1.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.print("Введите первое число: ");
+        double a = console.nextDouble();
+        System.out.print("Введите второе число: ");
+        double b = console.nextDouble();
+
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+
+        System.out.println("Сложение: " + (a + b));
+        System.out.println("Вычитание: " + (a - b));
+        System.out.println("Деление: " + (a / b));
+        System.out.println("Умножение: " + (a * b));
+    }
+}
+--------------------------------------------------------
+2.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        System.out.print("Введите первую строку: ");
+        String a = console.nextLine();
+        System.out.print("Введите вторую строку: ");
+        String b = console.nextLine();
+
+        if (a.equals(b)) {
+            System.out.println("Строки идентичны");
+        } else {
+            System.out.println("Строки неидентичны");
+        }
+    }
+}
+--------------------------------------------------------
+3.
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                System.out.println(number);
+            }
+        }
+    }
+}
